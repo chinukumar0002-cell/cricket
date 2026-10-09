@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Zone | Cricket Fans</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #071526;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #0d2035;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #46f59b;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #46f59b;
+}
+
+.hero {
+  min-height: 470px;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, #071526 15%, #071526dd 50%, #07152655),
+    url("https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1600&q=85")
+    center/cover;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.tag {
+  color: #46f59b;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin: 18px 0;
+  line-height: 1.1;
+}
+
+.hero p {
+  color: #d1dbe7;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-block;
+  background: #46f59b;
+  color: #071526;
+  padding: 14px 23px;
+  margin-top: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 65px 8%;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #aab9cb;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #10243a;
+  border: 1px solid #223a51;
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #46f59b;
+}
+
+.card p {
+  color: #c4d0dd;
+  line-height: 1.7;
+}
+
+.score {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.label {
+  display: inline-block;
+  background: #263a4f;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: #46f59b;
+  font-size: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.cta {
+  background: linear-gradient(135deg, #0e493c, #10243a);
+  border-radius: 18px;
+  padding: 45px 20px;
+}
+
+.cta p {
+  color: #d0e4dd;
+  margin-top: 12px;
+}
+
+input {
+  padding: 14px;
+  width: min(100%, 300px);
+  border: none;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #040d18;
+  padding: 25px;
+  color: #aab9cb;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 70px 5%;
+    min-height: 420px;
+  }
+
+  section {
+    padding: 45px 5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🏏 CRICKET ZONE</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#matches">Matches</a>
+    <a href="#teams">Teams</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">YOUR CRICKET DESTINATION</div>
+    <h1>Feel The Game.<br>Live The Cricket.</h1>
+    <p>
+      Cricket की दुनिया में आपका स्वागत है!
+      मैच अपडेट, टीम की जानकारी और क्रिकेट से जुड़ी
+      ताजा खबरें एक ही जगह पर देखें।
+    </p>
+    <a class="btn" href="#matches">Explore Matches →</a>
+  </div>
+</section>
+
+<section id="matches">
+  <h2 class="section-title">🏆 Match Center</h2>
+  <p class="subtitle">
+    मैच कार्ड के उदाहरण — ये वास्तविक लाइव स्कोर नहीं हैं।
+  </p>
+
+  <div class="cards">
+    <article class="card">
+      <span class="label">SAMPLE MATCH</span>
+      <h3 style="margin-top:18px">🇮🇳 India</h3>
+      <div class="score">185/6</div>
+      <p>20 Overs</p>
+      <hr style="margin:18px 0; border-color:#294158">
+      <h3>🇦🇺 Australia</h3>
+      <div class="score">142/4</div>
+      <p>15 Overs</p>
+      <p style="margin-top:18px">
+        Demo score — केवल डिजाइन दिखाने के लिए।
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="label">UPCOMING</span>
+      <h3 style="margin-top:18px">🏏 Match Schedule</h3>
+      <p>अपना अगला क्रिकेट मैच यहाँ दिखाएँ।</p>
+      <p style="margin-top:15px">
+        Date: अपनी तारीख डालें
+      </p>
+      <p>Time: मैच का समय डालें</p>
+    </article>
+
+    <article class="card">
+      <span class="label">CRICKET NEWS</span>
+      <h3 style="margin-top:18px">📰 Latest Updates</h3>
+      <p>
+        टीम की खबरें, मैच का विश्लेषण,
+        खिलाड़ियों की जानकारी और क्रिकेट के
+        नए अपडेट यहाँ प्रकाशित करें।
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="teams">
+  <h2 class="section-title">Popular Teams</h2>
+  <p class="subtitle">अपनी पसंदीदा टीम के बारे में जानें।</p>
+
+  <div class="cards">
+    <article class="card">
+      <h3>🇮🇳 Team India</h3>
+      <p>भारतीय क्रिकेट टीम की खबरें और अपडेट।</p>
+    </article>
+
+    <article class="card">
+      <h3>🇦🇺 Australia</h3>
+      <p>ऑस्ट्रेलियाई टीम और मैच की जानकारी।</p>
+    </article>
+
+    <article class="card">
+      <h3>🏆 IPL Cricket</h3>
+      <p>IPL टीमों, मैचों और टूर्नामेंट की जानकारी।</p>
+    </article>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="cta center">
+    <h2 class="section-title">Stay Connected!</h2>
+    <p>क्रिकेट अपडेट के लिए अपना ईमेल दर्ज करें।</p>
+
+    <form id="subscribeForm">
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      >
+      <button class="btn" type="submit">
+        Subscribe
+      </button>
+    </form>
+
+    <p id="message" aria-live="polite"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>🏏 CRICKET ZONE</p>
+  <p>Made for Cricket Fans ❤️</p>
+  <p>© <span id="year"></span> Cricket Zone</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+document.getElementById("subscribeForm")
+  .addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("message").textContent =
+      "Demo form: आपका ईमेल अभी कहीं सेव नहीं हुआ है।";
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
